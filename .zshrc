@@ -44,3 +44,7 @@ alias gpl='git pull'
 alias gst='git stash'
 alias gsta='git stash apply'
 
+# Variable modifications
+
+export PATH="$HOME/bin:$PATH"
+
