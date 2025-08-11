@@ -12,6 +12,14 @@ cd ~/.zsh-conf
 ./install
 ```
 
+Or if you have gh CLI:
+
+```zsh
+gh repo clone benja2998/zsh-conf ~/.zsh-conf
+cd ~/.zsh-conf
+./install
+```
+
 ## Features
 
 * Autosuggestions
