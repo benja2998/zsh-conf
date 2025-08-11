@@ -1,5 +1,23 @@
 #!/bin/zsh
 
+# Ensure zsh is installed
+
+zsh --version >/dev/null 2>&1
+
+if [ $? -ne 0 ]; then
+    echo "Zsh is not installed. Please install zsh first."
+    exit 1
+fi
+
+# Ensure bat is installed
+
+bat --version >/dev/null 2>&1
+
+if [ $? -ne 0 ]; then
+    echo "Bat is not installed. Please install bat first."
+    exit 1
+fi
+
 mkdir -p ~/.zsh/plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git  ~/.zsh/plugins/zsh-autosuggestions
