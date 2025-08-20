@@ -29,6 +29,7 @@ alias dir='ls'
 alias cat='bat -pP'
 alias catp='bat -p'
 alias clr='clear'
+alias vim='nvim'
 ##
 ### Git shortcuts
 ##
