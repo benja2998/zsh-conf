@@ -1,6 +1,9 @@
 # Set USER
 export USER="$(whoami)"
 
+# Execute TMUX
+[ -z "$TMUX" ] && exec tmux
+
 # Add completions path and initialize completion system
 fpath=(~/.zsh/plugins/zsh-completions/src $fpath)
 autoload -U compinit
