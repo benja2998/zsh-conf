@@ -20,6 +20,10 @@ PS1="%F{red}%n%f%F{yellow}@%f%F{cyan}%m%f${NEWLINE}%F{blue}%~%f %F{magenta}%#%f 
 ### Aliases for common commands
 ##
 alias ls='ls --color=auto'
+bat --version >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+    alias bat='batcat'
+fi
 alias l='ls -lh'
 alias ll='ls -lahF'
 alias la='ls -A'
@@ -30,22 +34,6 @@ alias cat='bat -pP'
 alias catp='bat -p'
 alias clr='clear'
 alias vim='nvim'
-##
-### Git shortcuts
-##
-alias g='git'
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gp='git push'
-alias gl='git log --oneline --graph --decorate'
-alias gco='git checkout'
-alias gb='git branch'
-alias gd='git diff'
-alias gcl='git clone'
-alias gpl='git pull'
-alias gst='git stash'
-alias gsta='git stash apply'
 
 # Variable modifications
 
