@@ -38,4 +38,4 @@ alias vim='nvim'
 # Variable modifications
 
 export PATH="$HOME/bin:$PATH"
-
+eval "$(zoxide init zsh)"
