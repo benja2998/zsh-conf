@@ -19,14 +19,11 @@ PS1="%F{red}%n%f%F{yellow}@%f%F{cyan}%m%f${NEWLINE}%F{blue}%~%f %F{magenta}%#%f 
 ##
 ### Aliases for common commands
 ##
-alias ls='ls --color=auto'
 bat --version >/dev/null 2>&1
 if [ $? -ne 0 ]; then
     alias bat='batcat'
 fi
-alias l='ls -lh'
-alias ll='ls -lahF'
-alias la='ls -A'
+alias ls='eza'
 alias grep='grep --color=auto'
 alias ..='cd ..'
 alias dir='ls'

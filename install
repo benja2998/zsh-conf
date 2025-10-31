@@ -9,6 +9,15 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# Ensure eza is installed
+
+eza --version >/dev/null 2>&1
+
+if [ $? -ne 0 ]; then
+    echo "Eza is not installed. Please install eza first."
+    exit 1
+fi
+
 # Ensure bat is installed
 
 bat --version >/dev/null 2>&1
